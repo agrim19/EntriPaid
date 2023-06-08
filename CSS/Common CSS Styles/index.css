@@ -1,0 +1,75 @@
+p {
+    color: rgb(210, 111, 36);
+    width: 50%;
+    background-color: pink;
+    padding: 40px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    /* background, background-color, background-image */
+
+    /* background-color is used to set the background to a color */
+    /* background-color: blue; */
+
+    /* background-image is used to set the background to an image. */
+    /* background-image: url("https://images.unsplash.com/photo-1672872476232-da16b45c9001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"); */
+    /* background-image: url("img.jpg"); */
+
+    /* background is a universal key, ie. we can use it for any type of background */
+    background: blue;
+    /* background: url("https://images.unsplash.com/photo-1672872476232-da16b45c9001?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"); */
+
+    height: 50vh;
+    width: 70vw;
+
+    /* I want to give a border to my div */
+    /* border requires a little more syntax, as instead of just 1 thing, we are specifying 3 things:display: 
+        1. border width: We want to tell how wide the border should be
+        2. border style : solid, dashed, 
+        3. border color : we want to tell the color of the border
+     */
+
+    /* With different keys: */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+
+    /* With just 1 key: */
+    /* border : width style color */
+    border: 5px solid red;
+
+    /* padding, margin */
+    /* margin is the amount of empty space we want to leave OUTSIDE our border */
+    /* margin: 50px; */
+    /* padding is the amount of space we want to leave empty INSIDE the border, between the border and the contents */
+    /* padding: 50px; */
+
+    /* The following information applies for BOTH padding and margin */
+    /* Different keys exist for padding of each side */
+    /* padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-right: 100px; */
+    /* Similar keys (margin-left, margin-top, margin-bottom, margin-right) exist for margin as well */
+
+    /* Single padding key can also be used */
+    /* 
+        padding: value;
+            means apply similar padding to all sides
+        padding: value1 value2;
+            means apply value1 to top and bottom, and apply value2 to left and right
+        padding: value1 value2 value3 value4;
+            means value1 is padding-top, value2 is padding-right, value3 is padding-bottom, value4 is padding-left
+    */
+    /* padding: 100px 50px; */
+    padding: 0 50px 100px 10px;
+    /* Same way also works for margin */
+
+    /* box sizing */
+    box-sizing: border-box;
+}

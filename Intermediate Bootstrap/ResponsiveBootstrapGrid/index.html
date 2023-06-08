@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Responsive Bootstrap Grid</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body class="p-4">
+        <h1>Reponsive Bootstrap Grid</h1>
+
+        <div class="container">
+            <div class="row">
+                <!-- col-{screen size}-{column size} classes : Apply this orientation to all screen sizes >= the provided screen size -->
+                <!-- The bigger the screen size used in the class, the higher the priority of the style -->
+                <div class="border col-12 col-md-4 col-xl-2">First Div</div>
+                <div class="border col-12 col-md-4 col-xl-8">Second Div</div>
+                <div class="border col-12 col-md-4 col-xl-2">Third Div</div>
+                <!-- The >= rule : Whichever style I apply using Bootstrap to any given screen size, it is applied to that screen size AND all screen sizes greater than that. -->
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

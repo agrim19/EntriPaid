@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Introduction To Flex</title>
+        <style>
+            #firstDiv {
+                background-color: blue;
+            }
+            #secondDiv {
+                background-color: green;
+            }
+            /* span {
+                display: block;
+            }
+            div {
+                display: inline;
+            } */
+            #parentDiv {
+                display: flex;
+                /* flex-direction property can be used to tell the CSS HOW we want to stack the flex-items inside the flex-container(along the row, or along the column) */
+                /* If we apply flex-direction: row, that means we want to stack all elements in a single row (side by side) */
+                /* flex-direction: row; */
+                /* If we apply flex-direction: column, that means we want to stack all elements in a single column (one below another) */
+                /* flex-direction: column; */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- parentDiv(or any other element with display:flex is called flex container -->
+        <div id="parentDiv">
+            <!-- all children of the flex container are called flex items-->
+            <div id="firstDiv">Hello</div>
+            <div id="secondDiv">Hello</div>
+        </div>
+        <!-- <span>Hello</span>
+        <span>Hello</span> -->
+    </body>
+</html>

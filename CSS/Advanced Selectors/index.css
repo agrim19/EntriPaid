@@ -1,0 +1,30 @@
+/* Descendant selector : It selects only the occurences of the second selector (the one after the space) that occur inside the tag of the first selector (the one before the space)
+    To form a descendant selector, we give 2 selectors separated by a space
+    Eg:
+        In ol li
+            we are selecting only the li which are inside an ol tag.
+*/
+/* ol li {
+    color: blue;
+} */
+
+/* ul li {
+    color: red;
+} */
+
+/* Child selector : Child selector is almost the same thing as a descendant selector with 1 very major difference. The difference is that::after
+    A descendant selector selects all descendants of the parent tag (i.e. child, grandchild, grandgrandchild, so on)
+    While a child selector selects ONLY and ONLY the direct child of the parent.
+*/
+div > p {
+    color: blue;
+}
+
+/* Adjacent sibling selector : This selector is used to select all instances of a tag that are direct and adjacent siblings(bhai ya behen) of another tag that we can specify.
+    For eg: div + ul would imply
+        We are trying to select all uls on the page which are direct siblings of a div tag.
+*/
+
+div + ul {
+    color: red;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>More Flex Properties</title>
+        <style>
+            #parentDiv {
+                background-color: blue;
+                height: 90vh;
+                width: 90vw;
+                display: flex;
+
+                /* In the default display:flex (default means that flex-direction is row), justify-content CSS property aligns the items horizontally*/
+                justify-content: center;
+                justify-content: flex-start; /* This is the default behviour */
+                justify-content: flex-end;
+                justify-content: space-around; /* space-around divides the space between the children equally, and also gives space to the left and right of the extreme divs. */
+                justify-content: space-between;
+
+                /* In the default display:flex (default means that flex-direction is row), align-items CSS property aligns the items vertically*/
+                align-items: center;
+                align-items: flex-start;
+                align-items: flex-end;
+                align-items: stretch; /* stretch is the default value */
+
+                /* If we reverse the flex-direction, i.e. we change it from teh default value of "row" to "column", justify-content and align-items roles are reverse. This means that now, justify-content will handle the VERTICAL positioning, and align items will handle the HORIZONTAL positioning */
+                /* flex-direction: column; */
+
+                /* Code for perfect centering */
+                justify-content: center;
+                align-items: center;
+            }
+            .childDiv {
+                background-color: green;
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parentDiv">
+            <div class="childDiv">Hello</div>
+            <!-- <div class="childDiv">Hello</div> -->
+            <!-- <div class="childDiv">Hello</div> -->
+        </div>
+    </body>
+</html>

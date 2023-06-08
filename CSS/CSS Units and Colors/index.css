@@ -1,0 +1,74 @@
+/* Absolute Unit : pixels */
+/* p {
+    font-size: 30px;
+} */
+
+/* em : em specifies the size of the element with respect to its direct parent.
+    Eg: 2em means size = 2*size of parent
+        3em means size = 3*size of parent
+        0.5em means size = 0.5*size of parent
+        and so on, we can have any number
+*/
+
+.parent {
+    font-size: 40px;
+}
+
+/* .child {
+    font-size: 2em;
+} */
+
+/* rem : rem specifies the size of the element with respect to the root element (the html tag).
+    Eg: 2rem means size = 2*size of html element
+        3rem means size = 3*size of html element
+        0.5rem means size = 0.5*size of html element
+        and so on, we can have any number
+*/
+
+html {
+    font-size: 40px;
+}
+
+.child {
+    font-size: 2rem;
+}
+
+/* vw : viewport width. Values in vw can range between 0vw-100vw
+    100vw means that the thing shoudl take 100% of the available screen width
+    0vw means that the thing shoudl take 0% of the available screen width    
+*/
+/* vh : viewport height. Values in vh can range between 0vh-100vh
+    100vh means that the thing shoudl take 100% of the available screen height
+    0vh means that the thing shoudl take 0% of the available screen height
+*/
+/* div {
+    background-color: blue;
+    width: 60vw;
+    height: 50vh;
+} */
+
+/* Percentage : If we write 50%, it means take 50% of the size of the DIRECT PARENT */
+.parentDiv {
+    width: 60vw;
+    background-color: #ff6666;
+}
+
+.childDiv {
+    background-color: rgb(180, 111, 236);
+    width: 40%;
+}
+
+/* rgb: rgb stands for red, green, blue 
+    The values for red, green, blue can range between 0-255
+*/
+/* Hexcode:
+    hexcode looks something like : #_ _ _ _ _ _ (6 letter/number without space)
+    First 2 represent the amount of red
+    3rd and 4th represent the amount of green
+    Last 2 represent the amount of blue
+    Hexadecimal number system.
+    0 - 9
+    a-f
+    0-255
+    0-ff
+*/

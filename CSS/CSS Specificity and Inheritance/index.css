@@ -1,0 +1,28 @@
+/* Inline styles get the maximum preference. The preference goes like this:
+    1. Inline styles : Maximum preference
+    2. ID styles
+    3. Class styles
+    4. Element styles
+    5. Universal selector
+*/
+
+/* CSS Specificity : The styles which are targeting a more "specific" group (eg. ID is unique for an element on a page, while class is given to a group, hence ID is more specific that class) are given a higher priority */
+
+#para {
+    color: green;
+}
+
+.paraClass {
+    color: blue;
+}
+
+p {
+    color: pink;
+}
+
+/* Here, we see that the styles applied to the ul get passed down to the li and eventually to the div. This is because of inheritance in CSS, which means some styles are inherited from the parent to the children. Some properties like border, however, are NOT inherited from parent to child*/
+/* This is Inheritance in CSS */
+ul {
+    color: green;
+    border: 2px solid black;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grids in HTML and CSS</title>
+        <style>
+            #parentDiv {
+                background-color: blue;
+                height: 90vh;
+                width: 90vw;
+                display: grid;
+                /* 
+                    grid-template-columns is the CSS property that allows us to control: 
+                        1. The number of columns in the grid 
+                        2. Width of the columns
+                */
+                grid-template-columns: auto 100px auto 100px;
+                /* auto value in the grid-template-columns propery indicates that the width is variable, and should be modified on the basis of the total space available */
+                /* grid-template-columns: auto auto auto auto; */
+
+                /* 
+                    grid-template-rows is the CSS property that allows us to control:
+                        1. Height of the rows(mostly this)
+                        2. Number of rows(very rarely)
+                */
+                grid-template-rows: 100px auto;
+
+                /* The next thing we need to control in our grid is the "gap" between the rows and between the columns */
+                /* The "gap" CSS property controls the gap between all rows and all columns */
+                /* gap: 50px; */
+                /* column-gap property does basically the same thing as the gap property, but it only applies to the columns */
+                column-gap: 20px;
+                /* row-gap similarly works for rows */
+                row-gap: 100px;
+            }
+            .childDiv {
+                background-color: green;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parentDiv">
+            <div class="childDiv">1</div>
+            <div class="childDiv">2</div>
+            <div class="childDiv">3</div>
+            <div class="childDiv">4</div>
+            <div class="childDiv">5</div>
+            <div class="childDiv">6</div>
+        </div>
+    </body>
+</html>

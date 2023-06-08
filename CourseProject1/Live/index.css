@@ -1,0 +1,31 @@
+.jumbotron {
+    /* This was to cover the whole page, as we have given 7vh to navbar, hence 100-7 = 93vh goes to jumbotron */
+    height: 93vh;
+    /* This was to provide a background image to the jumbtron */
+    background-image: url("https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dHJhdmVsfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    /* The next 2 properties, background-size and background-position helped us to get rid of the repeating background.
+        background-size : cover told CSS to stretch the background image to match the jumbotron dimensions,
+        and background-position: center told CSS to center the image in teh background.
+    */
+    background-size: cover;
+    background-position: center;
+    /* This was to remove rounding from the corners. */
+    border-radius: 0;
+
+    /* align-items center means that I want to align all items vertically in the center of the jumbotron.
+        justify-content : center means that I want to align all items horizontally in teh center
+    */
+    align-items: center;
+    justify-content: center;
+    /* For align-items and justify-content to work properly, we need display:flex; */
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 7vh;
+}
+
+* {
+    scroll-behavior: smooth;
+}

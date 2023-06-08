@@ -1,0 +1,41 @@
+/* element selector is used to select all instances of a particular element in the page
+/* CSS with element selector looks like :
+    <element name here> declaration
+*/
+/* p {
+    color: green;
+}
+h1 {
+    color: blue;
+} */
+
+/* id selector is used to select the element of the page that has a particular given id
+    We place a hashtag(#) before the id name to construct a id selector
+*/
+/* #secondPara {
+    color: blue;
+} */
+
+/* Functionality: turn all paragraphs that are green to green, red to red. */
+/* class selector is used to select all elements from the page having a given class.
+    We place a dot (.) before the class name to construct a class selector.
+*/
+/* .green {
+    color: green;
+}
+.red {
+    color: red;
+} */
+
+/* Universal selector selects all elements on the page 
+    Universal selector is represented by an asterisk (*)
+*/
+/* * {
+    color: green;
+} */
+
+/* Grouping selector basically states that we can group multiple selectors by inserting a comma (,) between them and apply common styles. */
+#secondPara,
+#thirdPara {
+    color: green;
+}
