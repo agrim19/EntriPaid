@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap Flex Utilities</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            .parent {
+                height: 400px;
+            }
+            .child {
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body class="p-4">
+        <h1>Bootstrap Flex Utilities</h1>
+
+        <!-- We will try and change 3 things using bootstrap: flex-direction, justify-content, align-items -->
+
+        <!-- For Flex direction, we use classes of the format flex-{value} where the value is the value we need to assign to flex-direction property :
+            value can be :
+                1. row
+                2. row-reverse
+                3. column
+                4. column-reverse
+        -->
+
+        <!-- For justify-content, bootstrap provides the classes of the format : justify-content-{value} -->
+
+        <!-- For align items, bootstrap provides us the classes of the format : align-items-{value} -->
+
+        <!-- For breakpoints, we have 2 other formats of classes, 
+            1. justify-content-{breakpoint}-{value} : set the justify-content property to given value if screen size is greater than breakpoint
+            2. align-items-{breakpoint}-{value} : set the align-items property to given value if the screen size is greater than breakpoint
+        -->
+
+        <div
+            class="parent bg-success d-flex flex-row justify-content-md-center align-items-lg-center"
+        >
+            <div class="child bg-primary w-25">Child</div>
+            <div class="child bg-primary w-25">Child</div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
