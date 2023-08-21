@@ -1,0 +1,10 @@
+/* ids styling */
+#image_container_div {
+    width: 40%;
+}
+#details_container_div {
+    width: 60%;
+}
+.content {
+    padding: 2%;
+}

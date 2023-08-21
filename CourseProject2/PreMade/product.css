@@ -1,0 +1,14 @@
+#product-banner-img {
+    width: 45%;
+    height: 70%;
+}
+
+.left-space {
+    margin-left: 3%;
+}
+.original-price {
+    text-decoration: line-through;
+}
+.bg-gray {
+    background-color: #e0dddd;
+}

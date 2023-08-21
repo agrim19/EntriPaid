@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MyBazaar</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body class="vh-100 d-flex flex-column">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">MyBazaar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse row"
+                    id="navbarSupportedContent"
+                >
+                    <form
+                        class="d-flex col-md-10 col-12 justify-content-md-center align-items-center"
+                        role="search"
+                    >
+                        <input
+                            class="form-control me-2 w-50"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-light" type="submit">
+                            Search
+                        </button>
+                    </form>
+                    <div
+                        class="col-12 col-md-2 text-primary d-flex justify-content-md-end"
+                    >
+                        Cart
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- content div -->
+        <div class="flex-grow-1 overflow-auto">
+            <!-- carousel -->
+            <div
+                id="carouselExample"
+                class="carousel slide bg-dark-subtle h-50"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner h-100">
+                    <div
+                        class="carousel-item active item-1 overflow-hidden h-100"
+                    >
+                        <img
+                            src="https://images.macrumors.com/t/YU0cj4rhNfVahW00d0QI0Qlln1s=/1600x/article-new/2021/07/iphone-12-ad-in-the-dark.jpg"
+                            class="d-block w-100 h-100 img-responsive"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item item-1 overflow-hidden h-100">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMGLfEHJGwlYDOJ1aqlq_vmz33IenmvnKMRg&usqp=CAU"
+                            class="d-block w-100 h-100 img-responsive"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item item-1 overflow-hidden h-100">
+                        <img
+                            src="https://i.ytimg.com/vi/hnukpTmSSKA/mqdefault.jpg"
+                            class="d-block w-100 h-100 img-responsive"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="products container p-5">
+                <div
+                    class="row gap-3 justify-content-between align-items-center"
+                >
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="product"
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9;2,499</p>
+                            <a
+                                href="product.html"
+                                class="btn btn-sm btn-primary"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-sm-6 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/LG-RS-Q19CNZE-Air-Conditionerr-581110279-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzg2M3xpbWFnZS9qcGVnfGltYWdlcy9oNmUvaDE1Lzk5ODM3MTMxNDg5NTguanBnfGZmNzg4NDNmMzhhZWJiMTgxM2FkMGM1YWM1MGFlOWM1Y2FlYWVjYTQ0NDZjZDdlYzBiYzE0Y2VmMzQ1OWFlNDA"
+                            class="card-img-top img-responsive h-50"
+                            alt="product"
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fs-6">
+                                <a href="#">
+                                    Lloyd 1.5 Ton 5 Star 5 in 1 Convertible
+                                    Inverter Split AC
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">
+                                Price : &#x20B9;42,990.00
+                            </p>
+                            <a
+                                href="product.html"
+                                class="btn btn-sm btn-primary"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-sm-6 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/Kodak-32SE5001BL-Television-493285971-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzcwNnxpbWFnZS9qcGVnfGltYWdlcy9oY2QvaGQxLzk4ODYzNjMzMjAzNTAuanBnfDVkOTlkYmQwMzQwOTU0ZTJhYmQzYzc5MTI5Y2QzYTkzN2EzNjliNzU3YWQyOTU0MGU4MzYyNjdmMGFkNjdmYWY"
+                            class="card-img-top img-responsive h-50"
+                            alt="product"
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fs-6">
+                                <a href="#">
+                                    Kodak 80 cm (32 inch) HD Ready Smart TV,
+                                    Special
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">
+                                Price : &#x20B9;8,999.00
+                            </p>
+                            <a
+                                href="product.html"
+                                class="btn btn-sm btn-primary"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-sm-6 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ"
+                            class="card-img-top img-responsive h-50"
+                            alt="product"
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fs-6">
+                                <a href="#">
+                                    Samsung Galaxy Watch4, R870N Smart Watch
+                                    44mm
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">
+                                Price : &#x20B9;26,999.00
+                            </p>
+                            <a
+                                href="product.html"
+                                class="btn btn-sm btn-primary"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-sm-6 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/HP-1F3W2A-Printer-493664593-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzAzN3xpbWFnZS9qcGVnfGltYWdlcy9oODcvaGRkLzk5MzExMTc2OTA5MTAuanBnfDY5NmE1Y2FmZWViZTNjMTMxNjViMzBiZWViZWU4MzM4NTQ1NmU5NTdiOTg2M2ZlMDlmNGIxNzQ4YzJhMzE4MzU"
+                            class="card-img-top img-responsive h-50"
+                            alt="product"
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fs-6">
+                                <a href="#">
+                                    HP Smart Tank 520 Inkjet Multi-function
+                                    Colour USB
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">
+                                Price : &#x20B9;12,499.00
+                            </p>
+                            <a
+                                href="product.html"
+                                class="btn btn-sm btn-primary"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-sm-6 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/Apple-iPad-10.2-inch-Tablet-491997817-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NDU0fGltYWdlL2pwZWd8aW1hZ2VzL2gxNS9oMjEvOTYzNTMxNzEyMTA1NC5qcGd8ZTAwN2I5Mjg5N2RkZmU4YzBkOTllNTljNjBjNDRlYTA1MGYwMzJjMGVmYWM5M2NmZDFjM2U2ODMwMjc5MTI3OQ"
+                            class="card-img-top img-responsive h-50"
+                            alt="product"
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fs-6">
+                                <a href="#">
+                                    Apple iPad Pro 4th Gen (2022) 27.96cm
+                                    (11-inch)
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">
+                                Price : &#x20B9;78,690.00
+                            </p>
+                            <a
+                                href="product.html"
+                                class="btn btn-sm btn-primary"
+                            >
+                                See More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

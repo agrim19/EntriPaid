@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MyBazaar</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body class="d-flex flex-column vh-100">
+        <nav
+            class="navbar navbar-expand-lg bg-body-tertiary p-3"
+            data-bs-theme="dark"
+        >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MyBazaar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse row"
+                    id="navbarSupportedContent"
+                >
+                    <form
+                        class="d-flex col col-md-10 col-12 justify-content-md-center align-items-center"
+                        role="search"
+                    >
+                        <input
+                            class="form-control me-2 w-50"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-light" type="submit">
+                            Search
+                        </button>
+                    </form>
+                    <div class="text-primary col d-flex justify-content-md-end">
+                        Cart
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content flex-grow-1 overflow-auto">
+            <div
+                id="carouselExample"
+                class="carousel slide h-50"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100 overflow-hidden">
+                        <img
+                            src="https://images.macrumors.com/t/YU0cj4rhNfVahW00d0QI0Qlln1s=/1600x/article-new/2021/07/iphone-12-ad-in-the-dark.jpg"
+                            class="d-block w-100 h-100 img-responsive"
+                            alt="carousel-image-1"
+                        />
+                    </div>
+                    <div class="carousel-item h-100 overflow-hidden">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMGLfEHJGwlYDOJ1aqlq_vmz33IenmvnKMRg&usqp=CAU"
+                            class="d-block w-100 h-100 img-responsive"
+                            alt="carousel-image-2"
+                        />
+                    </div>
+                    <div class="carousel-item h-100 overflow-hidden">
+                        <img
+                            src="https://i.ytimg.com/vi/hnukpTmSSKA/mqdefault.jpg"
+                            class="d-block w-100 h-100 img-responsive"
+                            alt="carousel-image-3"
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="products container p-5">
+                <div class="row justify-content-between gap-3">
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-5 col-8">
+                        <img
+                            src="https://www.reliancedigital.in/medias/boAt-Nirvana-Ion-Bluetooth-Earphones-493711847-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE0OHxpbWFnZS9qcGVnfGltYWdlcy9oMTEvaDNiLzk5NzM0MDQwNDEyNDYuanBnfDM5ODUyZDA5YjljZmIyYzFlNTI0ODRhZjI1NjhkYjIzYmNmNzhiMTRiMDk4OTQzNjhlZmYyZDE5M2QxMzIzNTY"
+                            class="card-img-top img-responsive h-50"
+                            alt="..."
+                        />
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title fs-6">
+                                <a href="#">
+                                    boAt Nirvana Icon with 120 Hours Playback
+                                    and Crystal Bionic Sound
+                                </a>
+                            </h5>
+                            <p class="card-text fs-6">Price : &#x20B9; 2,499</p>
+                            <a href="#" class="btn btn-primary btn-sm"
+                                >See More</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
