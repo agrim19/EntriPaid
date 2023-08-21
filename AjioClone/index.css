@@ -1,0 +1,66 @@
+/* IDs */
+#ajio-nav-logo {
+    height: 25%;
+}
+#logo-container-div {
+    display: flex;
+    align-items: center;
+}
+#nav-categories-container {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+#nav-utilities-container {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1.5%;
+    padding-bottom: 0.8%;
+}
+#nav-search-div {
+    border-radius: 1000px;
+    padding: 0.8% 2.5%;
+    border: 1px solid black;
+    background-color: rgb(243, 243, 227);
+    width: 75%;
+}
+
+/* Classes */
+.nav-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.nav-container-div {
+    padding: 0 3%;
+    margin: 2% 0;
+}
+.carousel.slide {
+    margin-bottom: 1%;
+}
+.trending-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* Tag Styling */
+* {
+    font-family: "Source Sans 3", sans-serif;
+}
+img {
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+    #ajio-nav-logo {
+        height: 45%;
+    }
+    .nav-container-div {
+        margin: 0;
+    }
+}
