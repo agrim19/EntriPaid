@@ -1,23 +1,25 @@
-import {useState} from "react";
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-    // To create a state, we need to use the useState hook in react.
-    const [myFirstState, setMyFirstState] = useState("hello");
-    console.log(myFirstState);
-    return (
-        <div className="App">
-            <div>I am a value</div>
-            {/* My final aim isthat when I click this button i wupdate state value */}
-            <button
-                onClick={() => {
-                    setMyFirstState("hiii");
-                }}
-            >
-                Click Me
-            </button>
-        </div>
-    );
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
